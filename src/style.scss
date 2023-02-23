@@ -1,0 +1,63 @@
+// ** Imports
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+
+// ** Variables
+// Typography
+$font-primary: 'Plus Jakarta Sans', sans-serif;
+
+// Colors
+$black: #000112;
+$dark-bg: #20212c; // Very Dark Grey (Dark BG)
+$dark-grey: #2b2c37;
+$dark-lines: #3e3f4e; // Lines (Dark)
+$medium-grey: #828fa3;
+$medium-grey-25: #828fa340;
+$light-lines: #e4ebfa; // Lines (Light)
+$light-bg: #f4f7fd; // Light Grey (Light BG)
+$white: #ffffff;
+
+$main-purple: #635fc7;
+$main-purple-10: #635fc71a;
+$main-purple-25: #635fc740;
+$main-purple-hover: #a8a4ff;
+$red: #ea5555;
+$red-hover: #ff9898;
+
+// Global Styles
+* {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 500;
+}
+
+body {
+	color: $medium-grey;
+	background-color: $dark-grey;
+	// background-color: $dark-bg;
+}
+
+// form {
+// 	background-color: $dark-grey;
+// 	min-width: 400px;
+// 	width: 80%;
+// 	max-width: 800px;
+// 	padding: 32px;
+// 	margin: 2rem auto;
+// 	// height: 80vh;
+
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	justify-content: center;
+// 	// align-items: center;
+
+// 	border-radius: 6px;
+// 	h2 {
+// 		margin-top: 0;
+// 		width: 100%;
+// 	}
+// }
+label {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15.12px;
+	color: $white;
+}

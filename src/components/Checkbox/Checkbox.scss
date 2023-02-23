@@ -1,0 +1,68 @@
+@import '../../style.scss';
+
+$check-icon: '../../assets/icon-check.svg';
+
+// $dark-bg: #20212c;
+// $medium-grey-25: #828fa340;
+// $main-purple: #635fc7;
+// $main-purple-25: #635fc740;
+
+.checkbox-wrapper {
+	width: 100%;
+	background-color: $dark-bg;
+	border-radius: 4px;
+	padding: 12px;
+	padding-top: 7px;
+	&:not(:last-of-type) {
+		margin-bottom: 8px;
+	}
+
+	&:hover {
+		background-color: $main-purple-25;
+	}
+}
+
+input[type='checkbox'] {
+	// strip off browser styles while maintaining accessibility
+	-webkit-appearance: none;
+	appearance: none;
+
+	//  Custom Design
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	border-radius: 2px;
+	border: 1px solid $medium-grey-25;
+	margin: unset;
+	margin-right: 16px;
+
+	outline: none;
+	cursor: pointer;
+
+	&:checked {
+		background-color: $main-purple;
+		position: relative;
+
+		&::before {
+			content: url($check-icon);
+			position: absolute;
+			right: 2px;
+			top: -2px;
+		}
+	}
+
+	position: relative;
+	vertical-align: middle;
+}
+
+label {
+	position: relative;
+	vertical-align: middle;
+	display: inline-block;
+	text-align: right;
+
+	&.checked {
+		text-decoration: line-through;
+		opacity: 0.5;
+	}
+}
